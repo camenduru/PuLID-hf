@@ -7,6 +7,7 @@ from pulid import attention_processor as attention
 from pulid.pipeline import PuLIDPipeline
 from pulid.utils import resize_numpy_image_long, seed_everything
 
+torch.set_grad_enabled(False)
 
 pipeline = PuLIDPipeline()
 
