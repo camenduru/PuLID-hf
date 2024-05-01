@@ -9,6 +9,9 @@ from pulid.utils import resize_numpy_image_long, seed_everything
 
 torch.set_grad_enabled(False)
 
+import os
+os.system('pip list')
+
 pipeline = PuLIDPipeline()
 
 # other params
