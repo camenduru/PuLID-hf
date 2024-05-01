@@ -4,7 +4,6 @@ diffusers==0.25.0
 transformers==4.36.2
 gradio>=4.0.0
 opencv-python
-timm
 einops
 ftfy
 basicsr
