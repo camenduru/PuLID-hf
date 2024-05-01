@@ -92,6 +92,8 @@ class PuLIDPipeline:
         self.handler_ante = insightface.model_zoo.get_model('models/antelopev2/glintr100.onnx')
         self.handler_ante.prepare(ctx_id=0)
 
+        print('load done')
+
         gc.collect()
         torch.cuda.empty_cache()
 
