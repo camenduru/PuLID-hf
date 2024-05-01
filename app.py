@@ -130,8 +130,8 @@ with gr.Blocks(title="PuLID", css=".gr-box {border-color: #8136e2}") as demo:
             )
             steps = gr.Slider(label="Steps", value=4, minimum=1, maximum=100, step=1)
             with gr.Row():
-                H = gr.Slider(label="Height", value=1024, minimum=512, maximum=2024, step=64)
-                W = gr.Slider(label="Width", value=768, minimum=512, maximum=2024, step=64)
+                H = gr.Slider(label="Height", value=1024, minimum=512, maximum=1280, step=64)
+                W = gr.Slider(label="Width", value=768, minimum=512, maximum=1280, step=64)
             with gr.Row():
                 id_scale = gr.Slider(label="ID scale", minimum=0, maximum=5, step=0.05, value=0.8, interactive=True)
                 mode = gr.Dropdown(label="mode", choices=['fidelity', 'extremely style'], value='fidelity')
