@@ -1,10 +1,10 @@
-torch==2.0.0
-torchvision==0.15.1
+torch==2.1.0
+torchvision==0.16.0
 diffusers==0.25.0
 transformers==4.36.2
 gradio>=4.0.0
 opencv-python
-timm==0.9.16
+timm
 einops
 ftfy
 basicsr
@@ -13,3 +13,4 @@ insightface
 onnxruntime-gpu
 accelerate
 spaces==0.19.4
+huggingface-hub
