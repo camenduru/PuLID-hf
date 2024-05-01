@@ -217,6 +217,7 @@ class PuLIDPipeline:
         return torch.cat((uncond_id_embedding, id_embedding), dim=0)
 
     def inference(self, prompt, size, prompt_n='', image_embedding=None, id_scale=1.0, guidance_scale=1.2, steps=4):
+        print(self.pipe.unet.time_embedding.linear_1.weight.data.dtype)
         images = self.pipe(
             prompt=prompt,
             negative_prompt=prompt_n,
