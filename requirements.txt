@@ -12,4 +12,4 @@ onnxruntime-gpu
 accelerate
 spaces==0.19.4
 huggingface-hub
-timm==0.5.4
+timm==0.6.7
