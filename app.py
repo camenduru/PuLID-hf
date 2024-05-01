@@ -7,8 +7,6 @@ from pulid import attention_processor as attention
 from pulid.pipeline import PuLIDPipeline
 from pulid.utils import resize_numpy_image_long, seed_everything
 
-torch.set_grad_enabled(False)
-
 import shutil
 
 def find_cuda():
@@ -249,5 +247,4 @@ with gr.Blocks(title="PuLID", css=".gr-box {border-color: #8136e2}") as demo:
     submit.click(fn=run, inputs=inps, outputs=[output, intermediate_output])
 
 
-demo.queue(max_size=3)
-demo.launch(server_name='0.0.0.0')
+demo.launch()
