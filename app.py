@@ -114,7 +114,7 @@ with gr.Blocks(title="PuLID", css=".gr-box {border-color: #8136e2}") as demo:
                 supp_image3 = gr.Image(
                     label="Additional ID image (auxiliary)", sources="upload", type="numpy", height=256
                 )
-            prompt = gr.Textbox(label="Prompt", value='portrait,color,cinematic,in garden,soft light,detailed face')
+            prompt = gr.Textbox(label="Prompt", value='portrait,cinematic,wolf ears,white hair')
             submit = gr.Button("Generate")
             neg_prompt = gr.Textbox(label="Negative Prompt", value=DEFAULT_NEGATIVE_PROMPT)
             scale = gr.Slider(
