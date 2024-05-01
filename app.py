@@ -1,3 +1,4 @@
+import spaces
 import gradio as gr
 import numpy as np
 import torch
@@ -19,6 +20,7 @@ DEFAULT_NEGATIVE_PROMPT = (
 )
 
 
+@spaces.GPU
 def run(*args):
     id_image = args[0]
     supp_images = args[1:4]
