@@ -42,7 +42,8 @@ class TimmModel(nn.Module):
             pretrained=False):
         super().__init__()
         if timm is None:
-            raise RuntimeError("Please `pip install timm` to use timm models.")
+            # raise RuntimeError("Please `pip install timm` to use timm models.")
+            return
 
         self.image_size = to_2tuple(image_size)
         self.trunk = timm.create_model(model_name, pretrained=pretrained)
