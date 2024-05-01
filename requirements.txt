@@ -1,6 +1,6 @@
 diffusers==0.25.0
-torch==2.0.0
-torchvision==0.15.1
+torch==2.0.1
+torchvision==0.15.2
 transformers==4.36.2
 opencv-python
 einops
@@ -12,4 +12,4 @@ onnxruntime-gpu
 accelerate
 spaces==0.19.4
 huggingface-hub
-timm==0.6.7
+timm
