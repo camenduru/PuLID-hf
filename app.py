@@ -1,4 +1,3 @@
-import spaces
 import gradio as gr
 import numpy as np
 import torch
@@ -19,8 +18,6 @@ DEFAULT_NEGATIVE_PROMPT = (
     'deformed, deformed eyeballs, cross-eyed,blurry'
 )
 
-
-@spaces.GPU
 def run(*args):
     id_image = args[0]
     supp_images = args[1:4]
@@ -222,4 +219,4 @@ with gr.Blocks(title="PuLID", css=".gr-box {border-color: #8136e2}") as demo:
     submit.click(fn=run, inputs=inps, outputs=[output, intermediate_output])
 
 
-demo.launch()
+demo.launch(share=True)
